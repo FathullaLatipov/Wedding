@@ -1,0 +1,474 @@
+body{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    width:100%;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%)
+}
+
+
+
+.nav-item .nav-link {
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.navbar-toggler span {
+    display: block;
+    background-color: #4f4f4f;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+}
+
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+/* center line goes transparent */
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+/* bottom line rotates 45 degrees counter clockwise, in, and down a bit to close the center of the X in the center of the button  */
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg) ;
+}
+
+
+ * Animate collapse open into hamburger menu
+ */
+
+/* top line moves back to initial position and rotates back to 0 degrees */
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg) ;
+}
+/* middle line goes back to regular color and opacity */
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+/* bottom line goes back to initial position and rotates back to 0 degrees */
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg) ;
+}
+
+
+.nav-item .nav-link:hover{
+    color: #E8CB6A;
+}
+
+/* carousel */
+
+.carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.4);
+  }
+
+
+
+.carousel-caption .text-caption{
+    position: relative;
+    z-index: 99;
+    color: red;
+}
+
+/* about */
+
+.about-img {
+    position: relative;
+    z-index: 2;
+    opacity: .9;
+    
+}
+
+
+.about-text{
+    color:#000;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 2rem;
+    font-family: sans-serif;
+}
+
+
+.hr-center{
+   width: 220px;
+   margin: auto;
+   border: 2px solid #b27a43; 
+}
+
+.hr-left{
+    border: 2px solid #b27a43;
+    width: 200px;
+    float: left;
+    margin-top: -9px;
+}
+
+
+.icon-text{
+    margin-top: -11%;
+    padding: 5px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.box{
+    background-color: #3f4042;
+    padding: 22px;
+    color: #fff;
+    box-shadow: 1px 1px 3px 2px #888;
+}
+
+.box:hover{
+    background-color: #707379;
+    box-shadow: 3px 3px 3px 3px #888;
+    transition: all 0.15s ease-out;
+}
+
+.fas{
+    color: #b27a43;
+    transition: all 0.15s ease-out;
+} 
+
+.fas:hover{
+    color: #fff;
+    transition: all 0.15s ease-out;
+} 
+
+
+
+.dark-overlay{
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0, .7));
+    z-index: 1;
+}
+
+.parallax {
+  background-image: url("./images/55169021_2.jpg");
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+
+
+
+/* parallax */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    width: 100%;
+    height: 307px;
+    transform: rotateY(180deg);
+  }
+
+
+  .vl {
+    border-left: 1px solid green;
+    height: 100px;
+    position: absolute;
+    left: 33%;
+    margin-left: -3px;
+    top: 10px;
+  }
+
+
+/* carousel-end */
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+/* media queries */
+@media screen and (max-width:780px) {
+    .carousel-image{
+        width: 100%;
+        height: 300px;
+    }
+    .carousel-caption{
+        bottom: 20%;
+    }
+    .overlay{
+        height: 110%;
+    }
+    .icons {
+        display: table;
+        margin: auto;
+        padding: 10px;
+    }
+    .box-center {
+        background-color: #dbaf96;
+        padding: 20px;
+    }
+}
+@media (min-width:800px) {
+    .carousel-item {
+        background:rgba(0, 0, 0, .7)
+    }
+
+    .carousel-image {
+        margin-top: -15%;
+        position: inherit;
+    }
+
+    .carousel-caption{
+        bottom: 30%;
+        height: 250px;
+        padding-top: 60px;
+    }
+    
+    .overlay{
+        height: 106%;
+    }
+
+    .box-center {
+        background-color: #dbaf96;
+        width: 800px;
+        height: 250px;
+        margin: auto;
+        margin-top: -1%;
+        margin-left: 34%;
+        position: absolute;
+        box-shadow: 10px 10px 10px 10px #888;
+    }
+
+    .box-center-2 {
+        background-color: #dbaf96;
+        width: 800px;
+        height: 250px;
+        margin: auto;
+        margin-top: 3%;
+        margin-left: 34%;
+        position: absolute;
+        box-shadow: 10px 10px 10px 10px #888;
+    }
+
+    .about_us{
+        margin-top: 25%;
+    }
+}
