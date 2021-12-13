@@ -106,6 +106,37 @@ body{
 
 /* about */
 
+
+
+.modal {
+  position: fixed;
+  margin-top: 5%;
+  top: 0;
+  left: 0;
+  z-index: 10300009;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .about-img {
     position: relative;
     z-index: 2;
