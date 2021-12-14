@@ -271,13 +271,25 @@ body{
 
 
   .vl {
-    border-left: 1px solid green;
+    border-left: 2px solid #DBAF96;
     height: 100px;
     position: absolute;
     margin-left: -3px;
     top: 10px;
   }
 
+  .atrik{
+    width: 200px;
+  }
+
+  .modal-open{
+      width: 100%;
+  }
+
+
+#exampleModalLong{
+  width: 100%;
+}
 
 /* carousel-end */
 .site-footer
@@ -447,7 +459,7 @@ body{
 /* media queries */
 @media screen and (max-width:780px) {
   #carouselExampleCaptions{
-      margin-top: 35%;
+      margin-top: 31%;
   }
     .carousel-image{
         width: 100%;
