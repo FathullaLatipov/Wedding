@@ -133,6 +133,7 @@ body{
 
 
 .modal-open .modal {
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
 }
