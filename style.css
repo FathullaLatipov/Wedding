@@ -23,7 +23,7 @@ body{
 
 .navbar-toggler span {
     display: block;
-    background-color: #4f4f4f;
+    background-color: #fff;
     height: 3px;
     width: 25px;
     margin-top: 5px;
@@ -538,7 +538,6 @@ body{
         height: 250px;
         margin: auto;
         margin-top: -1%;
-        margin-left: 34%;
         position: absolute;
         box-shadow: 10px 10px 10px 10px #888;
     }
