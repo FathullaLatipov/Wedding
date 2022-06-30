@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300;1,400;1,600;1,700&display=swap');
+
 body{
     padding: 0px;
     margin:0px;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .navbar {
