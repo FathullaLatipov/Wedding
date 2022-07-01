@@ -15,6 +15,13 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <style>
+    @media (min-width:900px) {
+      .carousel-item-next, .carousel-item-prev, .carousel-item.active{
+      height: 500px;
+      } 
+    }
+  </style>
 
 
   <!--  start navbar -->
@@ -68,33 +75,20 @@
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" style="background:rgba(0, 0, 0, .7)">
       <div class="carousel-item active">
         <img src="./images/55169021_2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-md-block">
-          <h1 style="font-weight: 700;text-shadow: 4px 4px #000;font-size: 57px;">Вы нашли мужчину своей мечты? </h1>
-          <p style="font-size: 28px;">Мы поможем вам найти СВОЁ платье!</p>
-          <button class="btn p-3 m-2" data-toggle="modal" data-target="#exampleModalLong"  style="border-radius: 50px;text-transform: uppercase;color:#fff;background-color: #DBAF96;">Записаться на примерку</button>
+          <button class="btn p-3" data-toggle="modal" data-target="#exampleModalLong"  style="border-radius: 50px;text-transform: uppercase;color:#fff;background-color: #DBAF96;margin-top: 10%;">Записаться на примерку</button>
         </div>
       </div>
       <div class="carousel-item" >
         <img src="./images/55169021_2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-md-block">
-          <h1 style="font-weight: 700;text-shadow: 4px 4px #000;font-size: 57px;">Вы нашли мужчину своей мечты? </h1>
-          <p style="font-size: 28px;">Мы поможем вам найти СВОЁ платье!</p>
-          <button class="btn p-3 m-2" style="border-radius: 50px;text-transform: uppercase;color:#fff;background-color: #DBAF96;">Записаться на примерку</button>
+          <button class="btn p-3" style="border-radius: 50px;text-transform: uppercase;color:#fff;background-color: #DBAF96;margin-top: 10%;">Записаться на примерку</button>
         </div>
       </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./images/55169021_2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h1 style="font-weight: 700;text-shadow: 4px 4px #000;font-size: 57px;">Вы нашли мужчину своей мечты? </h1>
-          <p style="font-size: 28px;">Мы поможем вам найти СВОЁ платье!</p>
-          <button class="btn p-3 m-2" style="border-radius: 50px;text-transform: uppercase;color:#fff;background-color: #DBAF96;">Записаться на примерку</button>
-        </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
@@ -107,12 +101,12 @@
     </button>
   </div>
   <!-- end carousel -->
-
+<br>
   <div class="container mt-5">
-    <span><a  style="color: #000;margin: 5px;" href="">Главная</a></span> / <span> <a style="color: #000;margin: 5px;"  href="">Свадебные платья</a> </span>
+    <span style="position: relative;z-index:99"><a style="color: #000;margin: 5px;" href="index.html">Главная</a></span> / <span> <a style="color: #000;margin: 5px;"  href="">Свадебные платья</a> </span>
     <h1 style="font-size: 50px;font-weight:600;">Свадебные платья</h1>
     <p style="font-size: 20px;font-weight: 500;">Больше моделей в нашем Instagram</p>
-    <a href="">@Nilsudelema</a>
+    <a href="https://instagram.com/nilsu.wedding?igshid=NmZiMzY2Mjc=">@Nilsudelema</a>
       <div class="row mt-3">
        <div class="col-md-3">
            <img src="./img_0912_1.webp" data-toggle="modal" data-target="#exampleModalLong" type="button" style="margin:auto;display:table;width: 300px;padding: 20px;" alt="">
@@ -147,6 +141,7 @@
                   <button type="button" class="close" data-dismiss="modal" style="background: #DBAF96;
                   border-radius: 50%;
                   opacity: 1;
+                  width: 54px;
                   margin-right: -1%;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -170,6 +165,7 @@
                   border-radius: 50%;
                   opacity: 1;
                   margin-right: -1%;
+                  width: 54px;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -192,6 +188,7 @@
                   border-radius: 50%;
                   opacity: 1;
                   margin-right: -1%;
+                  width: 54px;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -213,6 +210,7 @@
                   <button type="button" class="close" data-dismiss="modal" style="background: #DBAF96;
                   border-radius: 50%;
                   opacity: 1;
+                  width: 54px;
                   margin-right: -1%;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -236,6 +234,7 @@
                   border-radius: 50%;
                   opacity: 1;
                   margin-right: -1%;
+                  width: 54px;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -257,6 +256,30 @@
                   <button type="button" class="close" data-dismiss="modal" style="background: #DBAF96;
                   border-radius: 50%;
                   opacity: 1;
+                  margin-right: -1%;
+                  width: 54px;
+                  margin-top: -12px;" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img_0912_1.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+    <div class="col-md-3">
+           <img src="./img_0912_1.webp" data-toggle="modal" data-target="#exampleModalLong" type="button" style="margin:auto;display:table;width: 300px;padding: 20px;" alt="">
+           <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Записаться на примерку</h5>
+                  <button type="button" class="close" data-dismiss="modal" style="background: #DBAF96;
+                  border-radius: 50%;
+                  opacity: 1;
+                  width: 54px;
                   margin-right: -1%;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -280,6 +303,7 @@
                   border-radius: 50%;
                   opacity: 1;
                   margin-right: -1%;
+                  width: 54px;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -302,28 +326,7 @@
                   border-radius: 50%;
                   opacity: 1;
                   margin-right: -1%;
-                  margin-top: -12px;" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <img src="./img_0912_1.webp" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-       </div>
-    <div class="col-md-3">
-           <img src="./img_0912_1.webp" data-toggle="modal" data-target="#exampleModalLong" type="button" style="margin:auto;display:table;width: 300px;padding: 20px;" alt="">
-           <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Записаться на примерку</h5>
-                  <button type="button" class="close" data-dismiss="modal" style="background: #DBAF96;
-                  border-radius: 50%;
-                  opacity: 1;
-                  margin-right: -1%;
+                  width: 54px;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -346,6 +349,7 @@
                   border-radius: 50%;
                   opacity: 1;
                   margin-right: -1%;
+                  width: 54px;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -368,6 +372,7 @@
                   border-radius: 50%;
                   opacity: 1;
                   margin-right: -1%;
+                  width: 54px;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -390,6 +395,7 @@
                   border-radius: 50%;
                   opacity: 1;
                   margin-right: -1%;
+                  width: 54px;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -412,6 +418,7 @@
                   border-radius: 50%;
                   opacity: 1;
                   margin-right: -1%;
+                  width: 54px;
                   margin-top: -12px;" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -473,12 +480,11 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-2 offset-2">
-        <div class="box-center text-center" >
-          <p class="" style="color: #fff;padding-top: 5%;font-size: 32px;text-transform: uppercase;">ПРИМЕРКИ  ПО ПРЕДВАРИТЕЛЬНОЙ ЗАПИСИ</p>
-          <p style="color: #fff;font-size: 17px;text-transform: uppercase;">*ЗАПИСАТЬСЯ МОЖНО ЗА 1-2  ДНЯ ДО ЖЕЛАЕМОЙ  ДАТЫ   </p>
-          <button class="btn btn" type="button" data-toggle="modal" data-target="#exampleModalLong1" style="background-color:#fff;border-radius: 50px;padding: 20px;font-size: 16px;color: #2b2b2b;font-weight: bold;">ЗАПИСАТЬСЯ НА ПРИМЕРКУ</button>
-      
+      <div class="call-model">
+        <p style="font-size: 32px;color:#fff">ПРИМЕРКИ  ПО ПРЕДВАРИТЕЛЬНОЙ ЗАПИСИ</p>
+        <p style="font-size: 17px;color:#fff">*ЗАПИСАТЬСЯ МОЖНО ЗА 1-2  ДНЯ ДО ЖЕЛАЕМОЙ  ДАТЫ</p>
+        <button class="btn btn" type="button" data-toggle="modal" data-target="#exampleModalLong1" style="background-color:#fff;border-radius: 50px;padding: 20px;font-size: 16px;color: #2b2b2b;font-weight: bold;">ЗАПИСАТЬСЯ НА ПРИМЕРКУ</button>
+      </div>
       <!-- Modal -->
       <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -509,14 +515,12 @@
       </div>
           <br>
                 </div>
-      </div>
-    </div>
   </div>
   <br>
   <br>
   <br>
   <br>
-  <footer class="site-footer" style="margin-top: 13%;">
+  <footer class="site-footer" style="margin-top: 4%;">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
